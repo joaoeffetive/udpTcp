@@ -24,6 +24,9 @@ run_client_container(){
 #########################
 display_help() {
     echo
+    echo "PRIMEIRO: CRIE A NETWORK DO DOCKER"
+    echo "Comando:"
+    echo "docker network create containers"
     echo "Como usar:" >&2
     echo "Criar as imagens = ./docker.sh build_container"
     echo "Rodar o container Server = ./docker.sh run_server_container"
