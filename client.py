@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 import struct
 import socket
 import random
@@ -6,7 +8,7 @@ from helpers import *
 
 # Define a conexao udp
 sckt        = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-server_info = ('localhost', 5005)
+server_info = ('server-container', 5005)
 
 # O for e utilizado para controlar o timeout da requisicao
 for i in range(10):

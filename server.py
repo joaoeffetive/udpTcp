@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 import struct
 import socket
 import random
@@ -6,7 +8,7 @@ from helpers import reset_connection
 
 # Cria o servidor udp na porta 5005
 sckt = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-sckt.bind(("localhost", 5005))
+sckt.bind(("0.0.0.0", 5005))
 
 while True:
     # O servidor recebe o ack e o endereço do cliente
